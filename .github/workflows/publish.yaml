@@ -61,7 +61,7 @@ jobs:
       #     echo "${{ secrets.quay_password }}" | cosign login -u ${{ secrets.quay_username }} --password-stdin quay.io
       - name: Build images and push
         run: ./scripts/push-docker-image.sh
-        with:
+        env:
           IMAGE_OPERATOR: archway-network/prometheus-operator
           IMAGE_RELOADER: archway-network/prometheus-config-reloader
           IMAGE_WEBHOOK: archway-network/admission-webhook
