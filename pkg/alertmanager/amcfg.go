@@ -760,6 +760,10 @@ func (cb *configBuilder) convertDiscordConfig(ctx context.Context, in monitoring
 		out.Message = *in.Message
 	}
 
+	if in.Content != nil && *in.Content != "" {
+		out.Content = *in.Content
+	}
+
 	url, err := cb.getValidURLFromSecret(ctx, crKey.Namespace, in.APIURL)
 	if err != nil {
 		return nil, err

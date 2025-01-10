@@ -366,6 +366,7 @@ type discordConfig struct {
 	WebhookURL    string            `yaml:"webhook_url,omitempty"`
 	Title         string            `yaml:"title,omitempty"`
 	Message       string            `yaml:"message,omitempty"`
+	Content       string            `yaml:"content,omitempty"`
 }
 
 type webexConfig struct {

@@ -21730,6 +21730,18 @@ HTTPConfig
 <p>HTTP client configuration.</p>
 </td>
 </tr>
+<tr>
+<td>
+<code>content</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The template of the content&rsquo;s body.</p>
+</td>
+</tr>
 </tbody>
 </table>
 <h3 id="monitoring.coreos.com/v1alpha1.DockerSDConfig">DockerSDConfig
@@ -31565,6 +31577,18 @@ HTTPConfig
 <td>
 <em>(Optional)</em>
 <p>HTTP client configuration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>content</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The template of the content&rsquo;s body.</p>
 </td>
 </tr>
 </tbody>

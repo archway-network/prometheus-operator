@@ -134,6 +134,10 @@
                             type: 'object',
                             'x-kubernetes-map-type': 'atomic',
                           },
+                          content: {
+                            description: "The template of the content's body.",
+                            type: 'string',
+                          },
                           httpConfig: {
                             description: 'HTTP client configuration.',
                             properties: {
